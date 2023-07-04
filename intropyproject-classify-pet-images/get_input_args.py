@@ -47,4 +47,4 @@ def get_input_args():
                         help = 'Determine which CNN model architecture')
     parser.add_argument('--dogfile',type = str, default = 'dognames.txt',
                        help = 'Choose the file of dogs names')
-    return None
+    return parser.parse_args()
