@@ -67,4 +67,30 @@ def adjust_results4_isadog(results_dic, dogfile):
     Returns:
            None - results_dic is mutable data type so no return needed.
     """           
-    None
+#     useful function
+#     with open('dognames.txt', 'r') as file:
+#         for dog in file:
+# #             dog_names.append(dog.strip().replace(",",""))
+#             dog = dog.strip().split(',')[0]
+#             dog_names.append(dog)
+
+# #         dog_names_stripped = [name.strip() for name in dog_names]
+#     print(dog_names)
+    dognames_dic = {}
+    with open(dogfile, 'r') as file:
+        lines = file.readlines()
+        file.close()
+        # print(line)
+        for line in lines:
+            line = line.rstrip()
+            if line in dognames_dic:
+                None
+            else:
+                dognames_dic[line] = 1
+                
+            # lines = file.readline()    
+
+
+dic_test = {}
+filename = 'dognames.txt'
+adjust_results4_isadog(dic_test, filename)

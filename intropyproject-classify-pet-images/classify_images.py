@@ -76,7 +76,6 @@ def classify_images(images_dir, results_dic, model):
         
         model_label = lower_label
         
-        #results_dic[key].append(model_label)
         truth = results_dic[key][0]
         
         # Classifier Label
