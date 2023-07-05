@@ -48,7 +48,7 @@ def get_pet_labels(image_dir):
 #     dog_names = []
     for idx in range(0, len(images_list), 1):
         if images_list[idx][0] != '.':
-            low_pet_image = images_list[0].lower()
+            low_pet_image = images_list[idx].lower()
             word_list_pet_image = low_pet_image.split("_")
             pet_name = ""
             for word in word_list_pet_image:
@@ -64,3 +64,4 @@ def get_pet_labels(image_dir):
     for key in results_dic:
         print("Filename=", key, "   Pet Label=", results_dic[key][0])
     return results_dic
+# get_pet_labels('./pet_images')
