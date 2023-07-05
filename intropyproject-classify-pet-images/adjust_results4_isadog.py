@@ -88,7 +88,8 @@ def adjust_results4_isadog(results_dic, dogfile):
             else:
                 dognames_dic[line] = 1
                 
-            # lines = file.readline()    
+            # lines = file.readline()
+        # print(dognames_dic)    
 
 
 dic_test = {}
